@@ -3,11 +3,11 @@
 :root {
     /*colores*/
     --black: #282623;
-    --grey: #BABABA;
+    --grey: #e0e0e0;
     --off-white: #FAF8F7;
     --just-white: #FFFFFF;
     --blue: #47cfac;
-    
+
 }
 
 * {
@@ -20,6 +20,11 @@ html {
     font-size: 62.5%;
   }
 
+.grid-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
 a {
     text-decoration: none;
     color: var(--black)
@@ -27,8 +32,12 @@ a {
 
 body {
     width: 100vw;
-    position: fixed;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+.index-body {
+    position: fixed;
 }
 
 header {
@@ -117,4 +126,222 @@ header {
     color: rgb(17, 17, 17);
     font-size: 1.6rem;
     font-weight: 800;
+}
+
+.blogs-news-container {
+    padding: 0 50px;
+    background-color: var(--grey);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.blogs-news-img-container {  
+    padding: 20px 0px 30px 80px;
+    display: grid;
+    justify-content: end;
+}
+
+.blogs-news-img-container h3 {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+}
+
+.blogs-news-img-container img {
+    max-width: 400px; 
+}   
+
+.blogs-news-info-container {
+    margin: 0 40px;
+    align-self: center;
+}
+
+.blogs-news-info-container h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.blogs-news-info-container p {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.blogs-news-info-container a {
+    display: inline-block;
+    padding: 7px; 
+    width: 120px;
+    border-radius: 15px;
+    background-color: var(--blue);
+    color: var(--just-white);
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.blogposts-news-container {
+    padding: 0 100px 30px;
+}
+
+.blogposts-news-container h2 {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    color: var(--black);
+    border-bottom: 2px solid #cdd2da;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.blogposts-button {
+    display: inline-block;
+    padding: 7px;
+    width: 80px;
+    border-radius: 20px;
+    border: 2px solid var(--blue);
+    background-color: #ffffff;
+    color: rgb(17, 17, 17);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.blogposts-news-items {
+    display: inline-block;
+    margin: 0 auto;
+    width: 33%;
+    padding: 20px;
+}
+
+.blogposts-news-items p {
+    margin: 10px 0px 20px;
+    font-size: 1.6rem ;
+}
+
+.blogposts-news-items .blogposts-items-title {
+    margin: 0;
+    font-weight: 800;
+}
+
+.blogposts-news-items img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+    
+.blog-main-img img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.blog-info {
+    margin: 0 10%;
+}
+
+.blog-info h3 {
+    font-size: 1.6rem;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #cdd2da;
+}
+
+.blog-info h2 {
+    font-size: 2.5rem;
+    margin: 30px 0;
+    color: var(--blue);
+}
+
+.blog-info p {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.blog-contact-info {
+    width: 100%;
+    min-height: 250px;
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.blog-contact-info img {
+    width: 90px;
+    margin: 20px;
+}
+
+.blog-contact-info .contact-left, .contact-right {
+    display: flex;
+    font-size: 1.3rem;
+    align-items: center;
+}
+
+.blog-contact-info .contact-left a, .contact-right a {
+    display: inline-block;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.profile-info-container {
+    width: 100%;
+    min-height: 270px;
+    padding: 20px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.profile-info-container img {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.profile-info {
+    width: 60%;
+    padding: 20px 30px;
+}
+
+.profile-info p, h3 {
+    font-size: 1.6rem;
+    margin: 10px 0;
+}
+
+.main-projects-container {
+    padding: 0 100px;
+}
+
+.main-projects-container h3 {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #cdd2da;
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.projects-items {
+    margin: 20px;
+}
+
+.projects-items p {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    border-top: 20px solid var(--blue);
+    background-color: #22272d; 
+    align-items: center;
+    justify-content: center;   
+}
+
+footer p {
+    color: white;
+    font-size: 1.2rem;
 }
